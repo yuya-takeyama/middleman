@@ -22,7 +22,6 @@ class Middleman::Templates::Html5 < Middleman::Templates::Base
   def build_scaffold!
     template 'shared/config.tt', File.join(location, 'config.rb')
     directory 'html5/source', File.join(location, 'source')
-    empty_directory File.join(location, 'source')
   end
 end
 

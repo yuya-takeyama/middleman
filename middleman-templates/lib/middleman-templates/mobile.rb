@@ -17,7 +17,6 @@ class Middleman::Templates::Mobile < Middleman::Templates::Base
   def build_scaffold!
     template 'shared/config.tt', File.join(location, 'config.rb')
     directory 'mobile/source', File.join(location, 'source')
-    empty_directory File.join(location, 'source')
   end
 end
 
