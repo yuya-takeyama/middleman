@@ -61,6 +61,7 @@ module Middleman
         template 'shared/config.ru', File.join(location, 'config.ru')
       end
 
+      # Do not run bundle install
       class_option :'skip-bundle', :type => :boolean, :default => false
 
       # Write a Bundler Gemfile file for project
