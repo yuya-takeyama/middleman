@@ -12,6 +12,7 @@ class Middleman::Templates::Empty < Middleman::Templates::Base
   def build_scaffold!
     template 'shared/config.tt', File.join(location, 'config.rb')
     empty_directory File.join(location, 'source')
+    create_file File.join(location, 'source', '.gitkeep') unless options[:'skip-git']
   end
 end
 
