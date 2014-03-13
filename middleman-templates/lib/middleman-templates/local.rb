@@ -1,6 +1,5 @@
 # Local templates
 class Middleman::Templates::Local < Middleman::Templates::Base
-
   # Look for templates in ~/.middleman
   # @return [String]
   def self.source_root
